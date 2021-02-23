@@ -5,5 +5,8 @@ from .models import (
 )
 
 # Register your models here.
-admin.site.register(Product)
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ('title', 'vendor_id', 'cluster_label', 'cluster_id', 'new_cluster')
+
 admin.site.register(Vendor)
