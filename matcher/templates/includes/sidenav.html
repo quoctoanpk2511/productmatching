@@ -113,6 +113,16 @@
               <i class="ni ni-bullet-list-67 text-info"></i> Tables
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link {% if 'products' in segment %} active {% endif %}" href="{% url 'products' %}">
+              <i class="ni ni-shop text-info"></i> Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if 'product-results' in segment %} active {% endif %}" href="/product-results.html">
+              <i class="ni ni-shop text-info"></i> Product Results
+            </a>
+          </li>
 
           <li class="nav-item">
             <a class="nav-link" href="{% url 'logout' %}">
